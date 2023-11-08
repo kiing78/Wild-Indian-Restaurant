@@ -62,9 +62,7 @@ const createPlat = (title, imageUrl) => {
   platTitle.classList.add("plat-title");
   platTitle.innerHTML = title;
   plat.appendChild(platTitle);
-
-
 };
-for (let i = 0; i < menus.length; i++) {
-    createPlat(menus[i].name, menus[i].img);
-}
+menus.map((menu) => {
+  createPlat(menu.name, menu.img);
+});

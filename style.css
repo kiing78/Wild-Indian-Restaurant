@@ -17,7 +17,7 @@
   margin: 0;
   box-sizing: border-box;
 }
-
+/* NAVBAR  */
 .navbar {
   width: 100%;
   display: flex;
@@ -36,6 +36,7 @@
   width: 6rem;
 }
 
+/* HEADER */
 .carte {
   color: #d58b1d;
   margin: 2rem;
@@ -45,12 +46,7 @@
   font-size: xx-large;
 }
 
-.la-carte {
-  display: flex;
-  justify-content: center;
-  font-family: "kaushan", Arial, Helvetica, sans-serif;
-}
-
+/* PLATS CONTAINER */
 .plats {
   display: flex;
   flex-wrap: wrap;
