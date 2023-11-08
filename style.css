@@ -1,0 +1,103 @@
+@font-face {
+  font-family: "sourcecodepro";
+  src: url("/fonts/SourceCodePro-VariableFont_wght.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "kaushan";
+  src: url("/fonts/KaushanScript-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  background-color: black;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.navbar {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.navbar > a {
+  color: #d58b1d;
+  font-family: "sourcecodepro", Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.logo {
+  width: 6rem;
+}
+
+.carte {
+  color: #d58b1d;
+  margin: 2rem;
+  display: flex;
+  justify-content: center;
+  font-family: "kaushan", Arial, Helvetica, sans-serif;
+  font-size: xx-large;
+}
+
+.la-carte {
+  display: flex;
+  justify-content: center;
+  font-family: "kaushan", Arial, Helvetica, sans-serif;
+}
+
+.plats {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.plat {
+  width: 33.33%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.plat-img {
+  background-color: black;
+  background-size: cover;
+  width: 85%;
+  height: 250px;
+  border-radius: 10%;
+  transition: transform 0.2s;
+}
+.plat-img:hover {
+  transform: scale(1.1);
+}
+.plat-title {
+  font-size: x-large;
+  color: #8b1c06;
+  margin-top: 1rem;
+  margin-bottom: 6rem;
+  font-family: "kaushan";
+
+  font-weight: bold;
+  font-style: italic;
+  
+}
+
+@media (max-width: 768px) {
+
+  .plat {
+    width: 100%;
+    padding: 20px; 
+  }
+
+  .plat-img {
+    background-position: center; 
+    background-repeat: no-repeat;
+  }
+}
