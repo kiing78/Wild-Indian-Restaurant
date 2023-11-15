@@ -1,79 +1,139 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <title>Wild Indian Restaurant</title>
-    <link
-    rel="icon"
-    type="image/png"
-    sizes="20x20"
-    href="../images/logo.png"
-  />
-    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" sizes="20x20" href="../images/logo.png" />
+    <link rel="stylesheet" href="style.css" />
     <script src="index.js"></script>
-</head>
-<body>
-   <nav class="navbar">
-        <a href="./pages/menu.html">La Carte</a>
-        <img src="./images/logo.png" alt="logo" class="logo" onclick="window.location.href='/'">
-        <a href="./pages/contact.html">Contact</a>
+  </head>
+  <body>
+    <nav class="navbar">
+      <a href="./pages/menu.html">La Carte</a>
+      <img
+        src="./images/logo.png"
+        alt="logo"
+        class="logo"
+        onclick="window.location.href='/'"
+      />
+      <a href="./pages/contact.html">Contact</a>
     </nav>
     <nav class="mobile-nav">
-        <a href="./pages/menu.html">La Carte</a>
-        <a href="./pages/contact.html">Contact</a>
-      </nav>
-      <button class="hamburger ">
-        <div class="bar"></div>
-      </button>
-      <script src="./pages/burger.js"></script>
+      <a href="./pages/menu.html">La Carte</a>
+      <a href="./pages/contact.html">Contact</a>
+    </nav>
+    <button class="hamburger">
+      <div class="bar"></div>
+    </button>
+    <script src="./pages/burger.js"></script>
     <main>
-        <img src="images/background.png" alt="background" class="imageBackground">
-        <div class="mid">
-            <section class="slider-wrapper">
-                <button class="slide-arrow" id="slideArrowPrev" onclick="boutonPrecedent()">
-                  &#8249;
-                </button>
-                
-                <button class="slide-arrow" id="slide-arrow-next" onclick="boutonSuivant()">
-                  &#8250;
-                </button>
-                
-                <ul class="slides-container" id="slides-container">
-                  <li class="slide"><p>Un choix de varié de spécialité en ligne.</p></li>
-                  <li class="slide">Lorem ipsum.</li>
-                  <li class="slide">asperiores nisi.</li>
-                </ul>
-              </section>
+      <img
+        src="images/background.png"
+        alt="background"
+        class="imageBackground"
+      />
+      <div class="mid">
+        <section class="slider-wrapper">
+          <button
+            class="slide-arrow"
+            id="slideArrowPrev"
+            onclick="boutonPrecedent()"
+          >
+            &#8249;
+          </button>
+
+          <button
+            class="slide-arrow"
+            id="slide-arrow-next"
+            onclick="boutonSuivant()"
+          >
+            &#8250;
+          </button>
+
+          <ul class="slides-container" id="slides-container">
+            <li class="slide">
+              <p>
+                Un choix varié de
+                <br />
+                spécialité ligne.
+              </p>
+            </li>
+            <li class="slide">
+              <p>
+                Choissisez, commandez
+                <br />
+                et dégustez.
+              </p>
+            </li>
+            <li class="slide">
+              <p>
+                Savourez l'art de
+                <br />
+                la cuisine indienne.
+              </p>
+            </li>
+          </ul>
+        </section>
+      </div>
+      <img
+        src="images/background2.png"
+        alt="background2"
+        class="imageBackground"
+        id="bg2"
+      />
+      <div class="infos">
+        <div class="resto">
+          <div class="loca">
+            <img
+              src="images/loca.png"
+              alt="logo localisation"
+              class="logoImage"
+              id="logoMap"
+            />
+            <p>Wild Indian Restaurant</p>
+          </div>
+          <div class="clock">
+            <img
+              src="images/clock.png"
+              alt="logo pendule"
+              class="logoImage"
+              id="logoPendule"
+            />
+            <p>24/7</p>
+          </div>
         </div>
-        <img src="images/background2.png" alt="background2" class="imageBackground" id="bg2">
-        <div class="infos">
-            <figure>
-            <img src="images/logoMap.png" alt="logo carte" class="logoImage" id="logoMap"><figcaption>
-                <p>Wild India Restaurant</p>
-            </figcaption></figure>
-            <figure>
-            <img src="images/logoPendule.png" alt="logo pendule" class="logoImage" id="logoPendule"><figcaption>
-                <p>24/7</p>
-            </figcaption></figure>
-            <figure>
-            <img src="images/logoFacebook.png" alt="logo facebook" class="logoImage" id="logoFacebook"><figcaption>
-                <p>Facebook</p>
-            </figcaption></figure>
-            <figure>
-            <img src="images/logoX.png" alt="logo X" class="logoImage" id="logoX"><figcaption>
-                <p>X(ex-twitter)</p>
-            </figcaption></figure>
-            <figure>
-            <img src="images/logoInstagram.png" alt="logoInstagram" class="logoImage" id="logoInstagram"><figcaption>
-                <p>Instagram</p>
-            </figcaption></figure>
+
+        <div class="socialmedia">
+          <div class="icons">
+            <img
+              src="images/fb.png"
+              alt="logo facebook"
+              class="logoImage"
+              id="logoFacebook"
+            />
+            <img
+              src="images/twitter.png"
+              alt="logo twitter"
+              class="logoImage"
+              id="logoX"
+            />
+            <img
+              src="images/instagram.png"
+              alt="logo Instagram"
+              class="logoImage"
+              id="logoInstagram"
+            />
+          </div>
+
+          <p>Suivez-nous !</p>
         </div>
+      </div>
     </main>
     <footer class="footer">
         t
     </footer>
->>>>>>>>> Temporary merge branch 2
 </body>
 </html>
+
