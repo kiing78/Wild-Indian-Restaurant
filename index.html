@@ -3,14 +3,61 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Accueil</title>
     <link rel="stylesheet" href="index.css">
+    <script src="index.js"></script>
 </head>
 <body>
     <div class="navbar">
-        <p>La Carte</p>
+        <a href="" ><p>La Carte</p></a>
         <img src="./images/logo.png" alt="logo" class="logo">
-        <p>Contact</p>
+        <a href=""><p>Contact</p></a>
     </div>
+    <main>
+        <img src="images/background.png" alt="background" class="imageBackground">
+        <div class="mid">
+            <section class="slider-wrapper">
+                <button class="slide-arrow" id="slideArrowPrev" onclick="boutonPrecedent()">
+                  &#8249;
+                </button>
+                
+                <button class="slide-arrow" id="slide-arrow-next" onclick="boutonSuivant()">
+                  &#8250;
+                </button>
+                
+                <ul class="slides-container" id="slides-container">
+                  <li class="slide"><p>Un choix de varié de spécialité en ligne.</p></li>
+                  <li class="slide">Lorem ipsum.</li>
+                  <li class="slide">asperiores nisi.</li>
+                </ul>
+              </section>
+        </div>
+        <img src="images/background2.png" alt="background2" class="imageBackground" id="bg2">
+        <div class="infos">
+            <figure>
+            <img src="images/logoMap.png" alt="logo carte" class="logoImage" id="logoMap"><figcaption>
+                <p>Wild India Restaurant</p>
+            </figcaption></figure>
+            <figure>
+            <img src="images/logoPendule.png" alt="logo pendule" class="logoImage" id="logoPendule"><figcaption>
+                <p>24/7</p>
+            </figcaption></figure>
+            <figure>
+            <img src="images/logoFacebook.png" alt="logo facebook" class="logoImage" id="logoFacebook"><figcaption>
+                <p>Facebook</p>
+            </figcaption></figure>
+            <figure>
+            <img src="images/logoX.png" alt="logo X" class="logoImage" id="logoX"><figcaption>
+                <p>X(ex-twitter)</p>
+            </figcaption></figure>
+            <figure>
+            <img src="images/logoInstagram.png" alt="logoInstagram" class="logoImage" id="logoInstagram"><figcaption>
+                <p>Instagram</p>
+            </figcaption></figure>
+        </div>
+    </main>
+    <footer class="footer">
+        t
+    </footer>
 </body>
 </html>
