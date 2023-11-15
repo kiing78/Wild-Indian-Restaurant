@@ -17,7 +17,7 @@
   margin: 0;
   box-sizing: border-box;
 }
-
+/* NAVBAR  */
 .navbar {
   width: 100%;
   display: flex;
@@ -32,10 +32,16 @@
   text-decoration: none;
 }
 
+.navbar > a:hover {
+  cursor: pointer;
+  color: #8b1c06;
+}
+
 .logo {
   width: 6rem;
 }
 
+/* HEADER */
 .carte {
   color: #d58b1d;
   margin: 2rem;
@@ -45,12 +51,7 @@
   font-size: xx-large;
 }
 
-.la-carte {
-  display: flex;
-  justify-content: center;
-  font-family: "kaushan", Arial, Helvetica, sans-serif;
-}
-
+/* PLATS CONTAINER */
 .plats {
   display: flex;
   flex-wrap: wrap;
@@ -86,18 +87,108 @@
 
   font-weight: bold;
   font-style: italic;
-  
 }
 
 @media (max-width: 768px) {
-
   .plat {
     width: 100%;
-    padding: 20px; 
+    padding: 20px;
   }
 
   .plat-img {
-    background-position: center; 
+    background-position: center;
     background-repeat: no-repeat;
+  }
+}
+
+/* //MENU BURGER/ */
+.hamburger {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  display: block;
+  width: 35px;
+  cursor: pointer;
+  appearance: none;
+  background: none;
+  outline: none;
+  border: none;
+  z-index: 2;
+  transition: transform 0.5s ease;
+}
+
+.hamburger.is-active {
+  position: fixed;
+  top: 15px;
+  right: 15px;
+}
+
+.hamburger .bar,
+.hamburger:after,
+.hamburger:before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 5px;
+  background-color: #d58b1d;
+  margin: 6px 0px;
+  transition: 0.4s;
+}
+
+.hamburger.is-active:before {
+  transform: rotate(-45deg) translate(-8px, 6px);
+}
+
+.hamburger.is-active:after {
+  transform: rotate(45deg) translate(-9px, -8px);
+}
+.hamburger.is-active .bar {
+  opacity: 0;
+}
+
+.mobile-nav {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  min-height: 100vh;
+  display: none;
+  z-index: 1;
+  background-color: #8b1c06;
+
+}
+
+.mobile-nav a {
+  display: block;
+  padding-top: 4rem;
+  width: 100%;
+  max-width: 200px;
+  margin: 0 auto 16px;
+  text-align: center;
+  font-size: xx-large;
+  background-color: #8b1c06;
+  color: #d58b1d;
+  text-decoration: none;
+  font-family: "sourcecodepro";
+}
+
+
+.mobile-nav.is-active {
+  display: block;
+}
+
+@media (min-width: 769px) {
+  .mobile-nav {
+    display: none;
+  }
+
+  .hamburger {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    display: none;
   }
 }
