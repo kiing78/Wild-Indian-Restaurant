@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="../style.css" />
+    <link rel="icon" type="image/png" sizes="20x20" href="images/logo.png" />
+    <title>Wild Indian Restaurant</title>
+  </head>
+  <body>
+    <nav class="navbar">
+      <a href="./menu.html">La Carte</a>
+      <img
+        src="../images/logo.png"
+        alt="logo"
+        class="logo"
+        onclick="window.location.href='/'"
+      />
+      <a>Contact</a>
+    </nav>
+    <nav class="mobile-nav">
+      <a href="/">Accueil</a>
+      <a href="./menu.html">La Carte</a>
+    </nav>
+    <button class="hamburger">
+      <div class="bar"></div>
+    </button>
+
+    <section class="aaa">
+      <!--form stating-->
+
+      <form>
+        <div>
+          <input type="text" id="name" placeholder="Nom" required name="name" />
+        </div>
+        <div>
+          <input
+            type="email"
+            id="email"
+            placeholder="Email"
+            required
+            name="email"
+          />
+        </div>
+        <div class="textarea">
+          <textarea
+            id="message"
+            rows="30"
+            placeholder="Message"
+            required
+            name="message"
+          ></textarea>
+        </div>
+        <button type="submit" class="submit-btn" onclick="myFunction()">
+          Envoyer
+        </button>
+      </form>
+    </section>
+    <!-- end form -->
+
+    <!-- Google Map -->
+
+    <style>
+      .map-container {
+        margin-bottom: 8rem;
+      }
+    </style>
+    <section style="text-align: center">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m21!1m12!1m3!1d83905.47080570797!2d2.29934661112384!3d48.91451654994293!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m6!3e6!4m0!4m3!3m2!1d48.9145827!2d2.3819269999999997!5e0!3m2!1sen!2sfr!4v1699124320369!5m2!1sen!2sfr"
+        width="100%"
+        class="map-container"
+        height="350"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+    </section>
+    <!-- end Google Map -->
+
+    <script>
+      function myFunction() {
+          alert("Message envoyé.");
+
+      }
+    </script>
+    <script src="burger.js"></script>
+  </body>
+</html>
