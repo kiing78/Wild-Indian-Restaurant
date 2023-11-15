@@ -66,3 +66,5 @@ const createPlat = (title, imageUrl) => {
 menus.map((menu) => {
   createPlat(menu.name, menu.img);
 });
+
+
